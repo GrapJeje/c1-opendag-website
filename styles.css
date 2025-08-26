@@ -1,5 +1,7 @@
 :root {
     --primary-color: #fc0;
+    --secondary-color: #78034b;
+
     --primary-font: 'Felix Regular', sans-serif;
 }
 
@@ -9,7 +11,11 @@
     box-sizing: border-box;
 }
 
+/* ===================== Hero ===================== */
+
 header {
+    position: relative;
+    z-index: 1;
     font-family: var(--primary-font);
     color: white;
     padding: 10px 20px;
@@ -41,7 +47,6 @@ header a img {
     height: 100%;
     width: 100%;
     object-fit: cover;
-    z-index: 1;
     display: flex;
     align-items: flex-end;
 }
@@ -70,4 +75,47 @@ header a img {
     display: block;
     line-height: 1.2;
     font-size: calc(1.5rem + 1.8vw);
+}
+
+/* ===================== Nav ===================== */
+
+nav {
+    position: relative;
+    top: -50px;
+    justify-content: center;
+    display: flex;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px;
+}
+
+nav a {
+    display: block;
+    padding: 15px 25px;
+    text-decoration: none;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 0 -4px 6px rgba(0, 0, 0, 0.3);
+
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 -6px 10px rgba(0, 0, 0, 0.35);
+}
+
+.color-primary {
+    color: var(--secondary-color);
+    background-color: var(--primary-color);
+}
+
+.color-secondary {
+    color: var(--primary-color);
+    background-color: var(--secondary-color);
 }

@@ -12,6 +12,11 @@
     box-sizing: border-box;
 }
 
+main {
+    width: 70%;
+    margin: 0 auto;
+}
+
 /* ===================== Hero ===================== */
 
 header {
@@ -19,15 +24,49 @@ header {
     z-index: 1;
     font-family: var(--primary-font);
     color: white;
-    padding: 30px 20px;
     display: flex;
-    justify-content: space-between;
     align-items: center;
 }
 
 header a img {
+    margin: 30px 20px;
     height: 40px;
     width: auto;
+    z-index: 2;
+}
+
+.signup-card {
+    text-decoration: none;
+    position: absolute;
+    left: 50%;
+    top: 0;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    width: auto;
+    height: 60px;
+    padding: 0 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-family: var(--header-text);
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.signup-card:hover {
+    transform: translateX(-50%) translateY(-3px);
+    box-shadow: 0 10px 24px rgba(0,0,0,0.25);
+}
+
+.signup-arrow {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
 }
 
 .hero {

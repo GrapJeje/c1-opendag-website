@@ -31,18 +31,45 @@
     </div>
 </div>
 
-<nav>
-    <ul>
-        <li><a href="#opleiding" class="color-primary">Opleiding</a></li>
-        <li><a href="#beroepen" class="color-secondary">Beroepen</a></li>
-        <li><a href="#toekomst" class="color-primary">Toekomst</a></li>
-        <li><a href="#contact" class="color-secondary">Contact</a></li>
-    </ul>
-</nav>
+<div class="nav-wrapper">
+    <button class="nav-arrow prev" aria-label="Vorige">
+        <!-- simpele chevron -->
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M15 18l-6-6 6-6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+
+    <nav class="nav-slider" aria-label="Hoofdnavigatie">
+        <ul>
+            <li><a href="#opleiding" class="color-primary">
+                <h1>Opleiding</h1>
+            </a></li>
+            <li><a href="#beroepen" class="color-secondary">
+                <h1>Beroepen</h1>
+            </a></li>
+            <li><a href="#toekomst" class="color-primary">
+                <h1>Toekomst</h1>
+            </a></li>
+            <li><a href="#contact" class="color-secondary">
+                <h1>Contact</h1>
+            </a></li>
+            <li><a href="#contact" class="color-primary">
+                <h1>Contact</h1>
+            </a></li>
+            <li><a href="#contact" class="color-secondary">
+                <h1>Contact</h1>
+            </a></li>
+        </ul>
+    </nav>
+
+    <button class="nav-arrow next" aria-label="Volgende">
+        <svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true"><path d="M9 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+    </button>
+</div>
 
 
 <main></main>
 
 <footer></footer>
+
+<script src="index.js"></script>
 </body>
 </html>

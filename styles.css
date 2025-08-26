@@ -17,6 +17,10 @@ main {
     margin: 0 auto;
 }
 
+.gap {
+    margin-bottom: 10vh;
+}
+
 /* ===================== Hero ===================== */
 
 header {
@@ -266,4 +270,64 @@ nav a p {
     .nav-arrow.next {
         right: -10px;
     }
+}
+
+/* ===================== Subjects ===================== */
+
+.subjects-container {
+    background-color: var(--primary-color);
+    padding: 50px;
+    font-family: var(--primary-font);
+    font-weight: 1100;
+    color: var(--secondary-color);
+    font-size: calc(1.5rem + .3vw);
+    height: 50vh;
+}
+
+.subject h2 {
+    cursor: pointer;
+    margin-bottom: 10px;
+    font-size: calc(.7rem + .3vw);
+}
+
+.subject h2:hover {
+    text-decoration: underline;
+}
+
+.description {
+    max-height: 0;
+    opacity: 0;
+    overflow: hidden;
+    margin-left: 10px;
+    font-weight: 400;
+    font-size: calc(1rem + 0.2vw);
+    transition: max-height 0.4s ease, opacity 0.4s ease, margin 0.4s ease;
+}
+
+.subject:hover .description,
+.subject.active .description {
+    max-height: 500px;
+    opacity: 1;
+    margin: 10px 0 20px 10px;
+    display: block;
+}
+
+.subjects-wrapper {
+    display: flex;
+    gap: 20px;
+}
+
+.subjects-container {
+    flex: 0 0 50%;
+}
+
+.subjects-image {
+    flex: 0 0 50%;
+}
+
+.subjects-image img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 8px;
 }

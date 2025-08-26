@@ -47,3 +47,20 @@ document.addEventListener('DOMContentLoaded', () => {
 
     compute();
 });
+
+// Subject toggle functionality
+const subjects = document.querySelectorAll('.subject');
+let lastActive = subjects[0];
+lastActive.classList.add('active');
+
+subjects.forEach(subject => {
+    subject.addEventListener('mouseenter', () => {
+        lastActive.classList.remove('active');
+        subject.classList.add('active');
+    });
+    subject.addEventListener('mouseleave', () => {
+        lastActive = subject;
+        subjects.forEach(s => s.classList.remove('active'));
+        lastActive.classList.add('active');
+    });
+});

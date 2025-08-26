@@ -1,0 +1,73 @@
+:root {
+    --primary-color: #fc0;
+    --primary-font: 'Felix Regular', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    font-family: var(--primary-font);
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header a img {
+    height: 40px;
+    width: auto;
+}
+
+.hero {
+    position: relative;
+    background: linear-gradient(to bottom, #caa000, var(--primary-color));
+    height: 85vh;
+    width: 100vw;
+}
+
+.sub-hero {
+    width: 100%;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    z-index: 1;
+    display: flex;
+    align-items: flex-end;
+}
+
+.hero-image img {
+    height: 60vh;
+    width: auto;
+}
+
+.hero-text {
+    color: white;
+    font-family: var(--primary-font);
+    font-weight: 1100;
+    position: absolute;
+    top: 50%;
+    right: 0;
+    width: 65%;
+    transform: translateY(-50%);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+}
+
+.hero-text h1 span {
+    display: block;
+    line-height: 1.2;
+    font-size: calc(1.5rem + 1.8vw);
+}

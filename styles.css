@@ -353,3 +353,67 @@ nav a p {
     margin: 10px 0 20px 10px;
     display: block;
 }
+
+/* ===================== Career ===================== */
+
+.career-tags {
+    width: 70%;
+    margin: 0 auto 10vh;
+    font-family: var(--primary-font);
+    text-align: center;
+}
+
+.career-tags h1 {
+    margin-bottom: 1rem;
+    color: var(--secondary-color);
+    font-size: calc(1.5rem + 1vw);
+}
+
+.career-tags p {
+    margin-bottom: 2rem;
+    font-size: calc(1rem + 0.2vw);
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.tag {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: 15px 25px;
+    border-radius: 25px;
+    cursor: pointer;
+    position: relative;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.tag:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 16px rgba(0,0,0,0.2);
+}
+
+.tag-description {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: var(--secondary-color);
+    color: var(--primary-color);
+    padding: 10px 15px;
+    border-radius: 8px;
+    white-space: nowrap;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease, transform 0.3s ease;
+    font-size: 0.9rem;
+}
+
+.tag:hover .tag-description {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateX(-50%) translateY(5px);
+}

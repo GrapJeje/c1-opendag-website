@@ -294,25 +294,24 @@ nav a p {
 .card-image {
     flex: 0 0 50%;
     display: flex;
-    align-items: center; /* Verticaal centreren */
+    align-items: center;
 }
 
 .card-image img {
     width: 100%;
-    height: auto; /* Behoudt aspect ratio */
-    object-fit: contain; /* Toont hele afbeelding zonder bijsnijden */
+    height: auto;
+    object-fit: contain;
     border-radius: 8px;
-    max-height: 50vh; /* Voorkomt dat afbeelding te hoog wordt */
+    max-height: 50vh;
 }
 
 .card-wrapper.image-left {
     flex-direction: row-reverse;
 }
 
-/* Alternatieve oplossing als je een vaste hoogte wilt: */
 .card-image-fixed-height {
     flex: 0 0 50%;
-    height: 50vh; /* Zelfde hoogte als de tekst container */
+    height: 50vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -321,7 +320,7 @@ nav a p {
 .card-image-fixed-height img {
     width: 100%;
     height: 100%;
-    object-fit: contain; /* Hele afbeelding zichtbaar binnen container */
+    object-fit: contain;
     border-radius: 8px;
 }
 

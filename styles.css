@@ -591,5 +591,257 @@ footer {
     font-weight: 700;
 }
 
+/* ===================== Mobile Responsive Styles ===================== */
 
+@media (max-width: 1200px) {
+    main {
+        width: 85%;
+    }
 
+    .nav-wrapper {
+        width: 85%;
+    }
+
+    .footer-wrapper {
+        width: 85%;
+    }
+}
+
+@media (max-width: 992px) {
+    .hero-text {
+        width: 75%;
+    }
+
+    .hero-text h1 span {
+        font-size: calc(1.3rem + 1.5vw);
+    }
+
+    .card-container {
+        padding: 30px;
+        height: auto;
+        min-height: 40vh;
+    }
+
+    .footer-left a {
+        font-size: 4rem;
+    }
+}
+@media (max-width: 768px) {
+    main {
+        width: 90%;
+    }
+
+    .nav-wrapper {
+        width: 90%;
+    }
+
+    .footer-wrapper {
+        width: 90%;
+    }
+
+    .hero {
+        height: 70vh;
+    }
+
+    .hero-image img {
+        height: 50vh;
+    }
+
+    .hero-text {
+        width: 85%;
+    }
+
+    .signup-card {
+        height: 50px;
+        padding: 0 30px;
+        font-size: 0.9rem;
+    }
+
+    nav a {
+        height: 18vh;
+    }
+
+    .card-wrapper {
+        flex-direction: column !important;
+        gap: 30px;
+    }
+
+    .card-container,
+    .card-image,
+    .card-image-fixed-height {
+        flex: 0 0 100%;
+        width: 100%;
+    }
+
+    .card-image-fixed-height {
+        height: 40vh;
+    }
+
+    .career-tags {
+        width: 90%;
+    }
+
+    .footer-top {
+        flex-direction: column;
+        gap: 30px;
+        text-align: center;
+    }
+
+    .footer-right {
+        text-align: center;
+        width: 100%;
+    }
+
+    .footer-right a {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 576px) {
+    header {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    header a img {
+        margin: 15px auto;
+    }
+
+    .signup-card {
+        position: relative;
+        transform: none;
+        left: auto;
+        margin: 0 auto 20px;
+        width: 80%;
+    }
+
+    .signup-card:hover {
+        transform: translateY(-3px);
+    }
+
+    .hero {
+        height: 60vh;
+    }
+
+    .hero-image img {
+        height: 40vh;
+    }
+
+    .hero-text {
+        width: 95%;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        text-align: center;
+    }
+
+    .hero-text h1 span {
+        font-size: calc(1.2rem + 1.2vw);
+    }
+
+    nav {
+        top: -30px;
+    }
+
+    nav ul {
+        gap: 15px;
+    }
+
+    nav li {
+        flex: 0 0 85%;
+    }
+
+    nav a {
+        height: 16vh;
+        padding: 12px 20px;
+    }
+
+    .nav-arrow {
+        top: calc(-30px + 5vh);
+    }
+
+    .nav-arrow.prev {
+        left: -15px;
+    }
+
+    .nav-arrow.next {
+        right: -15px;
+    }
+
+    .card-container {
+        padding: 20px;
+        min-height: 35vh;
+    }
+
+    .facilities-section {
+        padding: 2rem 1rem;
+    }
+
+    .section-header h1 {
+        font-size: 2rem;
+    }
+
+    .facilities-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .facility-item {
+        padding: 20px;
+    }
+
+    .facility-icon {
+        font-size: 2.5rem;
+        margin-bottom: 1rem;
+    }
+
+    .tags {
+        gap: 10px;
+    }
+
+    .tag {
+        padding: 12px 20px;
+        font-size: 0.9rem;
+    }
+
+    .footer-left a {
+        font-size: 3rem;
+    }
+
+    .footer-right a {
+        font-size: 1.1rem;
+        padding: 12px 20px;
+    }
+}
+
+@media (max-width: 400px) {
+    .hero {
+        height: 50vh;
+    }
+
+    .hero-image img {
+        height: 35vh;
+    }
+
+    nav a {
+        height: 20vh;
+    }
+
+    .nav-arrow {
+        height: 36px;
+        width: 36px;
+    }
+
+    .tags {
+        gap: 8px;
+    }
+
+    .tag {
+        padding: 10px 15px;
+        font-size: 0.8rem;
+    }
+
+    .footer-left a {
+        font-size: 2.5rem;
+    }
+}
